@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <style> 
+            body {
+                margin: 0;
+                color: white;
+                
+            }
+            input[type=button], input[type=submit], input[type=reset] {
+                background-color: red;
+                border: 4px solid white;
+                color: white;
+                padding: 16px 32px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            input {
+                border: 4px solid white;
+                border-radius: 40px;
+                background-color: red;
+            }
+        </style>
+        <title>Register</title>
+    </head>
+    <body>
+        <div style="background-color: red;">
+        <form action="/confirm" target="_blank" method="post">
+            <fieldset>
+                <legend>Players Registration Page</legend>
+                <label>Player's Full Name: </label>
+                <input name="name" style="width: 75%;">
+                <br>
+                <br>
+
+                <label>Player's Age: </label> <br><br>
+                <input type="radio" id="age" name="age" value="young">Less than 22 <br>
+                <input type="radio" id="age" name="age" value="mid">23 to 30 <br>
+                <input type="radio" id="age" name="age" value="prime">30 to 35 <br>
+                <input type="radio" id="age" name="age" value="veteran">More than 35 
+                <br>
+                <br>
+
+                <label>Choose Playing Position: </label>
+                <select name="position" id="position">
+                <option value="gk">Goal Keeper</option>
+                <option value="lb">Left Back</option>
+                <option value="cb">Centre Back</option>
+                <option value="rb">Right Back</option>
+                <option value="lm">Left Midfielder</option>
+                <option value="cdm">Central Defensive Midfielder</option>
+                <option value="cm">Central Midfielder</option>
+                <option value="cam">Central Attacking Midfielder</option>
+                <option value="rm">Right Midfielder</option>
+                <option value="lw">Left Winger</option>
+                <option value="cf">Centre Forward</option>
+                <option value="st">Striker</option>
+                <option value="rw">Right Winger</option>
+                </select>
+                <br>
+                <br>
+
+                <label>Player's Team: </label>
+                <input name="team">
+                <br>
+                <br>
+
+                <label>Player's Nationality: </label>
+                <input name="nation">
+                <br>
+                <br>
+
+                <input type="submit" value="Register">
+            </fieldset>
+        </form> 
+    </div>  
+    </body>
+</html>
